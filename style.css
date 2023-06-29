@@ -10,9 +10,7 @@ body {
 .navbar{
     padding-left: 10px;
 }
-
-
-    .parallax-1 {
+.parallax-1 {
         /* Set a specific height */
         min-height: 1300px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./portfolio-imgs/Portfolio\ photos/top.webp");
@@ -27,9 +25,15 @@ body {
         text-align: center;
         padding-top: 10%;
     }
+    .aboutme{
+        color: white;
+        max-width: 40%;
+        align-self: center;
+        padding-right: 20px;
+    }
     .parallax-2 {
         /* Set a specific height */
-        min-height: 700px;
+        min-height: 400px;
         background-image: url("./portfolio-imgs/Portfolio\ photos/newpp.webp");
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -67,8 +71,8 @@ body {
 .projpics{
         display: flex;
         justify-content: space-evenly;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
@@ -94,8 +98,8 @@ body {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+background-color: #333;
+overflow: hidden;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -121,3 +125,99 @@ body {
 .topnav .icon {
     display: none;
 }
+.parallax-3 {
+    /* Set a specific height */
+    min-height: 400px;
+    background-image: url("./portfolio-imgs/Portfolio\ photos/parallax3.webp");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.scale{
+    min-height: 200px;
+    width: 200px;
+}
+.scale:hover{
+    transform: scale(1.5);
+}
+.bottom-wrap{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.conme{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.links{
+    
+    color: white;
+    font-size: 20pt;
+}
+
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+animation: slide-left 4s;
+}
+@keyframes slide-left {
+from {
+    margin-left: 100%;
+    width: 300%; 
+}
+
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+div.slide-right > h3{
+    animation: slide-right 4s;
+}
+div.slide-right {
+    width:100%;
+    overflow:hidden;
+}
+
+@keyframes slide-right {
+    from {
+    margin-left: -300%;
+    width: 300%; 
+    }
+    to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+
+div.slide-up {
+height:200px;
+overflow:hidden;
+}
+div.slide-up p {
+animation: 5s slide-up;
+margin-top:0%;
+}
+
+@keyframes slide-up {
+from {
+    margin-top: 100%;
+    height: 300%; 
+}
+
+to {
+    margin-top: 0%;
+    height: 100%;
+}
+}
+
+
+
+
+
