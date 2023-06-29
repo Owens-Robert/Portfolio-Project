@@ -10,70 +10,6 @@ body {
 .navbar{
     padding-left: 10px;
 }
-.parallax-1 {
-        /* Set a specific height */
-        min-height: 1300px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./portfolio-imgs/Portfolio\ photos/top.webp");
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .card-img-overlay{
-        color: white;
-        text-align: center;
-        padding-top: 10%;
-    }
-    .aboutme{
-        color: white;
-        max-width: 40%;
-        align-self: center;
-        padding-right: 20px;
-    }
-    .parallax-2 {
-        /* Set a specific height */
-        min-height: 400px;
-        background-image: url("./portfolio-imgs/Portfolio\ photos/newpp.webp");
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-.me {
-        display: flex;
-        list-style-type: none;
-        gap: 20px;
-    }
-.mid-container {
-        /* align-items: center; */
-        padding-top: 20px;
-        padding-bottom: 20px;
-        justify-content: center;
-        display: flex;
-    }
-.mcphoto {
-        max-width: 400px;
-        height: 400px;
-    }
-#projects{
-    align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    background-color: rgb(15, 28, 20);
-    color: white;
-    }
-.rounded{
-        width: 200px;
-        height: 200px;
-    }
-.projpics{
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
     .topnav a:not(:first-child) {display: none;}
@@ -125,6 +61,127 @@ overflow: hidden;
 .topnav .icon {
     display: none;
 }
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+}
+div.slide-left p {
+    animation: slide-left 4s;
+}
+@keyframes slide-left {
+from {
+    margin-left: 100%;
+    width: 300%; 
+}
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+div.slide-right > h3{
+    animation: slide-right 4s;
+}
+div.slide-right {
+    width:100%;
+    overflow:hidden;
+}
+@keyframes slide-right {
+from {
+    margin-left: -300%;
+    width: 300%; 
+}
+to {
+    margin-left: 0%;
+    width: 100%;
+}
+}
+div.slide-up {
+    height:200px;
+    overflow:hidden;
+}
+div.slide-up p {
+    animation: 5s slide-up;
+    margin-top:0%;
+}
+@keyframes slide-up {
+    from {
+    margin-top: 100%;
+    height: 300%; 
+}
+to {
+    margin-top: 0%;
+    height: 100%;
+}
+}
+.parallax-1 {
+     /* Set a specific height */
+    min-height: 1300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./portfolio-imgs/Portfolio\ photos/top.webp");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .card-img-overlay{
+        color: white;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .aboutme{
+        color: white;
+        max-width: 40%;
+        align-self: center;
+        padding-right: 80px;
+    }
+    .downa{
+        height: 100px;
+        width: 100px;
+        color: white;
+    }
+    .parallax-2 {
+        /* Set a specific height */
+        min-height: 400px;
+        background-image: url("./portfolio-imgs/Portfolio\ photos/newpp.webp");
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+.me {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+    }
+.mid-container {
+        /* align-items: center; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center;
+        display: flex;
+    }
+.mcphoto {
+        width: 400px;
+        /* height: 400px; */
+    }
+#projects{
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(15, 28, 20);
+    color: white;
+    }
+.rounded{
+        width: 200px;
+        height: 200px;
+    }
+.projpics{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
 .parallax-3 {
     /* Set a specific height */
     min-height: 400px;
@@ -156,65 +213,6 @@ overflow: hidden;
     
     color: white;
     font-size: 20pt;
-}
-
-div.slide-left {
-  width:100%;
-  overflow:hidden;
-}
-div.slide-left p {
-animation: slide-left 4s;
-}
-@keyframes slide-left {
-from {
-    margin-left: 100%;
-    width: 300%; 
-}
-
-to {
-    margin-left: 0%;
-    width: 100%;
-}
-}
-
-div.slide-right > h3{
-    animation: slide-right 4s;
-}
-div.slide-right {
-    width:100%;
-    overflow:hidden;
-}
-
-@keyframes slide-right {
-    from {
-    margin-left: -300%;
-    width: 300%; 
-    }
-    to {
-    margin-left: 0%;
-    width: 100%;
-}
-}
-
-div.slide-up {
-height:200px;
-overflow:hidden;
-}
-div.slide-up p {
-animation: 5s slide-up;
-margin-top:0%;
-}
-
-@keyframes slide-up {
-from {
-    margin-top: 100%;
-    height: 300%; 
-}
-
-to {
-    margin-top: 0%;
-    height: 100%;
-}
 }
 
 
